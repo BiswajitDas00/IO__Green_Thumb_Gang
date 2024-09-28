@@ -1,0 +1,114 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Centers the header content */
+    align-items: center;
+    background-color: #00A99D;
+    padding: 20px;
+    position: relative; /* Enables positioning of the logout button */
+    color: white;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.logout-btn {
+    position: absolute; /* Absolute positioning for the button */
+    right: 20px; /* Places it at the right corner */
+    top: 20px; /* Places it at the top */
+    background-color: white;
+    color: #00A99D;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #f0f0f0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.product {
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-info h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #00A99D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #008B7D;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #00A99D;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
